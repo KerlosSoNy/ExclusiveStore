@@ -39,18 +39,22 @@ export default function LogIn(){
     }
 
     return(
-        <div>
-        <div>
-            <div class="h-screen w-screen bg-white flex items-center">
+        <div className="container 
+            me-4  lg:my-10 lg:mt-10 
+            md:my-10 md:mt-10 
+            my-0
+        "
+        >
+            <div class="w-screen bg-white flex items-center">
                 <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-5 text-gray-700">
-                        <div class="w-full lg:flex lg:justify-end lg:w-1/2 mx-5 my-12">
+                        <div class="hidden md:flex lg:flex  lg:justify-end lg:w-1/2 mx-5 my-12">
                             <img src="https://static.vecteezy.com/system/resources/previews/022/055/521/large_2x/shopping-cart-on-mobile-phone-screen-blue-background-ai-photo.jpeg" class="" alt="Page not found"/>
                         </div>
                         
-                        <div class="w-full lg:w-1/2 mx-8">
-                            <div class="text-7xl text-[#88C9D5] font-dark font-extrabold mb-8">Log in to Exclusive</div>
+                        <div class="w-full md:w-2/3 lg:w-1/2 lg:mx-8 md:mx-8 mx-8 my-20">
+                            <div class="text-7xl text-[#88C9D5] font-dark font-extrabold mb-8 w-full">Log in Exclusive</div>
                             
-                            <form onSubmit={(e)=> e.preventDefault()} className="flex flex-col gap-10 w-[50%] mx-auto">
+                            <form onSubmit={(e)=> e.preventDefault()} className="flex flex-col gap-10 lg:w-[100%] md:w-[100%] w-[100%] mx-auto">
                             <p class="text-2xl md:text-3xl font-light leading-normal mb-1 mx-auto">
                             Enter your details below
                             </p>    
@@ -81,6 +85,5 @@ export default function LogIn(){
                 </div>
             </div>
         </div>
-    </div>
     )
 }

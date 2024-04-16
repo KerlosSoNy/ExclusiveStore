@@ -34,7 +34,7 @@ export default function WishList(){
                 <div>
                 {
                     Array.isArray(wish) && wish.length > 0? 
-                    <div className="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1  gap-5 justify-center p-6 shadow-lg font-semibold">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-5 justify-center p-6 shadow-lg font-semibold">
                         {wish.map((e)=>{
                             return(
                                 <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-3 flex flex-col relative">
@@ -52,7 +52,7 @@ export default function WishList(){
                                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white max-h-24 h-20">{e.title.slice(0,48)}...</h5>
                                         </Link>
                                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 max-h-32 h-32 mt-4">{e.description}</p>
-                                        <button onClick={()=> disp(increaseCount({product: e , count : 1}))} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 lg:w-[36%] mg:w-[36%] w-[42%] mx-auto mt-5">
+                                        <button onClick={()=> disp(increaseCount({product: e , count : 1}))} className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 lg:w-[36%] mg:w-[36%] w-[42%] mx-auto mt-5">
                                             Add To Cart
                                         </button>
                                     </div>

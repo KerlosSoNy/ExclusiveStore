@@ -19,10 +19,12 @@ export default function Hero(){
                     Array.isArray(links)
                     && links.slice(0,5).map((e)=>{
                         return(
-                            <div className="flex flex-row ">
+                            <div>
+                                <div className="flex flex-row ">
                                 <Link to={`/products/${e}`} className="font-semibold">
                                     {e.toUpperCase()}
                                 </Link> 
+                                </div>
                                 <div className=" ms-1 text-xl pt-[0.25rem]">
                                     <BsArrowRightShort />
                                 </div>

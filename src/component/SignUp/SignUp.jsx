@@ -51,18 +51,22 @@ export default function SignUp(){
     }
 
     return(
-        <div>
-        <div>
-            <div class="h-screen w-screen bg-white flex items-center">
-                <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-5 text-gray-700">
-                        <div class="w-full lg:flex lg:justify-end lg:w-1/2 mx-5 my-12">
+        <div className="container 
+            mx-auto lg:my-10 lg:mt-20 
+            md:my-10 md:mt-10
+            my-10 mt-4
+        "
+        >
+            <div class=" w-screen bg-white flex items-center">
+                <div class="container flex flex-col lg:flex-row md:flex-col items-center justify-between text-gray-700">
+                        <div class="hidden md:hidden lg:flex lg:justify-end lg:w-1/2 md:w-1/3 w-full mx-5 my-12">
                             <img src="https://static.vecteezy.com/system/resources/previews/022/055/521/large_2x/shopping-cart-on-mobile-phone-screen-blue-background-ai-photo.jpeg" class="" alt="Page not found"/>
                         </div>
                         
-                        <div class="w-full lg:w-1/2 mx-8">
-                            <div class="text-7xl text-red-500 font-dark font-extrabold mb-8">Create an account</div>
+                        <div class="w-[100%] md:w-3/4 lg:w-1/2 mx-8">
+                            <div class="text-7xl md:text-6xl text-red-500 font-dark font-extrabold text-center mb-8 w-full">Create an account</div>
                             
-                            <form onSubmit={(e)=> e.preventDefault()} className="flex flex-col gap-10 w-[50%] mx-auto">
+                            <form onSubmit={(e)=> e.preventDefault()} className="flex flex-col gap-10 lg:w-[60%] md:w-[100%] w-[95%] mx-auto">
                             <p class="text-2xl md:text-3xl leading-normal mb-1 mx-auto font-semibold">
                             Enter your details below
                             </p>    
@@ -106,6 +110,5 @@ export default function SignUp(){
                 </div>
             </div>
         </div>
-    </div>
     )
 }
