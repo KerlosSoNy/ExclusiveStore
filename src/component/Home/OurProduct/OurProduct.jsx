@@ -17,7 +17,7 @@ export default function OurProduct(){
             <div className="flex flex-row items-center justify-between px-4 ">
                     <h1 className="lg:text-4xl md:text-3xl text-xl font-semibold pb-3 ps-4 w-full">Explore Our Products</h1>
             </div>
-            <ProductsSlider start={10} end={20}/>
+            <ProductsSlider start={10} end={18}/>
         </div>
     )
 }

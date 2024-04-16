@@ -22,7 +22,7 @@ export default function TodayOffers(){
                     <Timer3/>
             </div>
             <div className="">
-                <ProductsSlider start={4} end={9}/>
+                <ProductsSlider start={4} end={8}/>
             </div>
             <div className="text-white w-full flex flex-row justify-center">
                 <Link to='/products' className="bg-red-500 px-10 py-3 rounded-md mt-3">View All Products</Link>

@@ -18,7 +18,7 @@ export default function ThisMonth(){
                     <Link to='/products' className="bg-red-500 lg:px-10 md:px-8 ps-5 py-3 rounded-md mt-3 lg:w-40 md:w-40 w-32 ">View All</Link>
             </div>
             <div className="">
-                <ProductsSlider start={0} end={5}/>
+                <ProductsSlider start={0} end={4}/>
             </div>
         </div>
     )
